@@ -1,0 +1,641 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* <!-- navigation --> */
+
+.container {
+    padding: 0 10%;
+}
+
+.main-header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/bannar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    background-attachment: fixed;
+    /* filter: blur(6px); */
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    padding-left: 130px;
+    margin-top: 10px;
+}
+.menu-icon{
+    display: none;
+}
+
+.main-navigation {
+    /* position:fixed; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 90%;
+    z-index: 1;
+}
+
+.nav {
+    width: 90%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50%;
+    list-style: none;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+
+.nav ul li:hover {
+    color: white;
+    text-decoration: underline 3px;
+    border-radius: 5px;
+}
+
+.main-text {
+    position: absolute;
+    top: 250px;
+    width: 50%;
+    left: 10%;
+}
+
+
+.text h2 {
+    color: grey;
+}
+
+.text h2::before {
+    content: 'WELCOME THE. ';
+    color: white;
+    font-size: 30px;
+}
+
+
+.text p {
+    width: 100%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text P::before {
+    content: 'THE ';
+    color: white;
+    font-size: 30px;
+}
+
+.butt button {
+    background-color: rgb(8, 172, 209);
+    color: white;
+    padding: 8px;
+    width: 25%;
+    border-style: none;
+}
+
+.butt button:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+
+
+/* about css */
+
+.main-about {
+    margin: 100px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.main-about img {
+    width: 100%;
+    height: 200px;
+}
+
+.main-about img:hover {
+    border-radius: 70px;
+}
+
+.text-section {
+    width: 80%;
+
+}
+
+.text2 h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.text2 p {
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.butt2 button {
+    background-color: rgb(8, 172, 209);
+    color: white;
+    padding: 8px;
+    width: 20%;
+    border-style: none;
+}
+
+/* blogs */
+
+.blog-page {
+    position: relative;
+    background: hsla(0, 0%, 92%, 1);
+    width: 100%;
+}
+
+.blog-head h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: black;
+    margin: 0px auto;
+}
+
+.blog-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: hsla(0, 0%, 92%, 1);
+
+}
+
+.blog-maincard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+.card {
+    border-radius: 20px;
+    width: 25%;
+    background: hsla(216, 100%, 96%, 1);
+    z-index: 1;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+/* facultys card */
+
+
+.faculty-page {
+    width: 100%;
+    /* height: 550px; */
+    background: hsla(0, 1%, 17%, 1);
+}
+
+.faculty-head {
+    text-align: center;
+    color: white;
+}
+
+.facultycard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.maincard img {
+    width: 100%;
+    height: 200px;
+}
+
+.maincard {
+    width: 20%;
+}
+
+.t1 h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* gallery css */
+
+.gallery-page {
+    width: 100%;
+    background: hsla(210, 50%, 98%, 1);
+}
+
+.gallery-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.img1 {
+    width: 30%;
+
+}
+
+.img1 img {
+
+    width: 100%;
+    height: 250px;
+}
+
+.butt1 button {
+    background-color: rgb(8, 172, 209);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+}
+
+/* footer */
+
+.footer-page {
+    width: 100%;
+    background: hsla(0, 0%, 92%, 1);
+
+}
+
+.footer-body {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.footer-head2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    gap: 60px;
+    font-family: sans-serif
+}
+
+.list1 li {
+    list-style: none;
+    padding: 10px;
+}
+
+.list2 li {
+    list-style: none;
+    padding: 9px;
+}
+
+.list3 img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom p {
+    padding: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+
+@media only screen and (max-width: 769px) {
+
+    body {
+
+        width: 769px;
+    }
+
+    .main-navigation {
+        right: 10%;
+    }
+
+    .logo img {
+        width: 90%;
+        padding-left: 85px;
+    }
+
+    .nav ul {
+        padding-left: 38%;
+    }
+
+    .nav ul li {
+        padding: 8px;
+    }
+
+
+
+    .main-text {
+        padding-top: 18%;
+        top: 15px;
+        left: 95px;
+    }
+
+    .main-text .text h2 {
+        font-size: 15px;
+    }
+
+    .text h2::before {
+        font-size: 20px;
+    }
+
+    .main-about {
+        margin: 10% 0%;
+
+    }
+
+    .main-about .img1 {
+        width: 60%;
+
+    }
+
+    .text-section .text2 h2 {
+        font-size: 20px;
+    }
+
+    .text-section .text2 {
+        font-size: 15px;
+    }
+
+    .butt2 button {
+        width: 100px;
+    }
+
+    .blog-bg {
+        height: 90%;
+    }
+
+    .blog-head h2 {
+        margin-top: 0%;
+    }
+
+    .blog-maincard {
+        margin-top: 30%;
+
+    }
+
+    .blog-maincard .card {
+        width: 45%;
+    }
+
+    .facultycard .maincard {
+
+        width: 60%;
+    }
+
+    .gallery-img .img1 {
+        width: 40%;
+    }
+
+    .butt1 {
+        width: 50%;
+    }
+
+    .butt1 button {
+        width: 60%;
+        margin: 20%;
+
+    }
+
+    .footer-body {
+        width: 100%;
+    }
+
+    .footer-head1 {
+        width: 25%;
+        font-size: 15px;
+    }
+
+    .footer-head2 {
+        width: 75%;
+        padding-left: 50px;
+    }
+
+    .footer-head2 .list1 {
+
+        font-size: 13px;
+    }
+
+    .footer-head2 .list2 {
+
+        font-size: 13px;
+    }
+
+    .footer-head2 .list3 {
+
+        font-size: 13px;
+    }
+
+
+}
+
+@media only screen and (max-width: 426px) {
+    body {
+
+        width: 426px;
+    }
+    .logo img{
+        width: 45px;
+        padding-left: 40px;
+       }
+   
+
+    .main-header {
+        width: 100%;
+        height: 480px;
+        /* background-size: 100%; */
+
+    }
+
+
+    .main-text {
+        padding: 0;
+        top: 120px;
+        left: 95px;
+    }
+
+    .main-text .text h2 {
+        font-size: 20px;
+    }
+
+    .text h2::before {
+        font-size: 15px;
+    }
+
+    .text P::before {
+        font-size: 20px;
+
+    }
+
+    .butt button {
+        width: 100px;
+    }
+
+    .main-about {
+        width: 300px;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+
+    .main-about .img1 img {
+        width: 100%;
+        height: 10%;
+        padding-left: 90px;
+
+    }
+
+    .text-section {
+        padding-left: 60px;
+
+    }
+
+    .text-section .text2 h2 {
+        font-size: 15px;
+
+
+    }
+
+    .text-section .text2 {
+        font-size: 15px;
+
+
+    }
+
+    .butt2 button {
+        width: 100px;
+    }
+
+    .blog-page {
+        width: 100%;
+    }
+
+    .blog-maincard {
+        margin-top: 60px;
+
+    }
+
+    .blog-maincard .card {
+        width: 100%;
+        /* display: flex; */
+        align-items: center;
+    }
+
+    .faculty-page {
+        width: 100%;
+
+    }
+
+    .gallery-page {
+        width: 100%;
+
+    }
+
+    .gallery-head {
+
+        padding: 20px;
+    }
+
+    
+    .gallery-img .img1 {
+        width: 100%;
+    }
+
+
+  
+    .footer-page {
+        width: 100%;
+
+    }
+
+    .footer-body {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    .footer-head1 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-left: 100px;
+    }
+
+    .footer-head2 {
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+
+    .footer-head2 .list1 {
+        font-size: 15px;
+     padding-right:100px;
+        
+    }
+
+    .footer-head2 .list2 {
+        font-size: 15px
+        
+    }
+
+    .footer-head2 .list3 {
+        font-size: 15px
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+/* / burgur menu start / */
+
+@media (max-width: 426px) {
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 30px;
+        position: relative;
+        right: -85%;
+        cursor: pointer;
+    }
+  
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: #101524db;
+        text-align: center;
+        padding: 10px 0;
+    }
+  
+    .nav ul.active {
+        display: flex;
+        margin-top: 5%;
+        z-index: 1;
+    }
+  
+    .nav ul li {
+        padding: 10px 0;
+        text-decoration: none;
+    }
+  }
+  /* / burgur menu end / */

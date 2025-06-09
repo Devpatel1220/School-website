@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL</title>
+    
+    <!-- icon link -->
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+
+   <!--burgur menu start  -->
+   <script>
+    function toggleMenu() {
+        document.querySelector(".nav ul").classList.toggle("active");
+    }
+   </script>
+   <!--burgur menu end  -->
+   
+   
+   <style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* <!-- navigation --> */
+
+.container {
+    padding: 0 10%;
+}
+.main-bg{
+    background: black;
+}
+.main-navigation {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    width: 10%;
+}
+.logo img {
+    margin-top: 10px;
+}
+.nav {
+    width: 90%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 45%;
+    list-style: none;
+
+}
+.menu-icon{
+    display: none;
+}
+.nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.nav ul li:hover {
+    color: white;
+    text-decoration: underline 3px;
+    border-radius: 5px;
+}
+
+/* gallery */
+
+.gallery-heading{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.main-gallery  {
+    width: 100%;
+    margin-bottom: 10%;
+   
+}
+.img{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img img{
+    width: 30%;
+    height: 270px;
+    border-radius: 10px;
+}
+/* footer */
+
+.footer-page {
+    width: 100%;
+    background: hsla(0, 0%, 92%, 1);
+}
+
+.footer-body {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.footer-head2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    gap: 60px;
+    font-family: sans-serif
+}
+
+.list1 li {
+    list-style: none;
+    padding: 10px;
+}
+
+.list2 li {
+    list-style: none;
+    padding: 9px;
+}
+
+.list3 img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom p {
+    padding: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+ 
+    .logo img {
+        width: 100%;
+    }
+    .nav ul {
+        padding-left: 29%;
+    }
+    .nav ul li  {
+        padding: 8px;
+    }
+    .main-gallery img {
+        width: 45%;
+        height: 200px;
+    }
+    .footer-body{
+    width: 100%;
+    }
+    .footer-head1{
+        width: 25%;
+        font-size: 15px;
+    }
+    .footer-head2{
+        width: 75%;
+        padding-left: 50px;
+    }
+    .footer-head2 .list1{
+    
+        font-size: 13px;
+    }
+    .footer-head2 .list2{
+    
+        font-size:13px;
+    }.footer-head2 .list3{
+
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 426px) {
+
+    .main-bg{
+        width: 100%;
+        height: 70px;
+    }
+
+    .logo img{
+    width: 140%;
+   
+    }
+    .main-gallery img{
+        width: 90%;
+    }
+
+    .footer-page {
+        width: 100%;
+
+    }
+
+    .footer-body {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    .footer-head1 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-left: 100px;
+    }
+
+    .footer-head2 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-left: 0;
+
+    }
+    .footer-head2 .list3 {
+    
+        padding-left: 25px;
+
+    }
+
+
+   
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+/* / burgur menu start / */
+
+@media (max-width: 800px) {
+  .menu-icon {
+      display: block;
+      color: white;
+      font-size: 30px;
+      position: relative;
+      right: -85%;
+      cursor: pointer;
+  }
+
+  .nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: #101524db;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav ul.active {
+      display: flex;
+      margin-top: 5%;
+  }
+
+  .nav ul li {
+      padding: 10px 0;
+      text-decoration: none;
+  }
+}
+/* / burgur menu end / */
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- navigation -->
+   
+        
+    <div class="main-bg">
+        <div class="container">
+            <div class="main-navigation">
+               <div class="logo">
+                <img src="img/Logo.png" alt="home" class="home" />
+               </div>
+               
+                <!--burgur menu start  -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+                <!--burgur menu end  -->
+
+                <div class="nav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Teachers.html">Teachers</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contactus.html">Contact us</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
+                </ul>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+     <div class="gallery-heading">
+        <h1>Gallery</h1>
+     </div>
+     <br>
+
+     <div class="container">
+     <div class="main-gallery">
+        <div class="img">
+            <img src="img/mg1.png" alt="gallery" />
+            <img src="img/mg2.png" alt="gallery" />
+            <img src="img/mg3.png" alt="gallery" />
+            <img src="img/mg4.png" alt="gallery" />
+            <img src="img/mg5.png" alt="gallery" />
+            <img src="img/mg6.png" alt="gallery" />
+            <img src="img/mg7.png" alt="gallery" />
+            <img src="img/mg8.png" alt="gallery" />
+            <img src="img/mg9.png" alt="gallery" />
+        </div>
+     </div>
+     </div>
+
+
+     <!-- footer -->
+     <footer>
+        <div class="footer-page">
+          <div class="container">
+            <div class="footer-body">
+      
+              <div class="footer-head1">
+                <img src="img/Logo.png" alt="logo">
+                <p>Jl. Siliwangi No 123, Cibadak, Cibadak, Sukabumi,
+                  Jawa Barat 43351, Indonesia, (0266)531333</p>
+                <h3>info@smpn1cibadak.sch.id <br> smpn1cbd_kabsi@yahoo.co.id</h3>
+              </div>
+      
+              <div class="footer-head2">
+                <div class="list1">
+                  <ul>
+                    <h2>Jelajah</h2>
+                    <li>Profil </li>
+                    <li>Sekola</li>  
+                    <li>Sambutan</li>
+                    <li>Berita</li>
+                  </ul>
+                </div>
+               
+                <div class="list2">
+                  <ul>
+                    <h2>Halaman Umum</h2>
+                    <li>Kontak </li>
+                    <li>Lokasi</li>
+                    <li>Panduan PPDB</li>  
+                    <li>PPDB SMPN 1 Cibadak</li>
+                    <li>Data Guru</li>
+                  </ul>
+                </div>
+                <div class="list3">
+                  <h2>Social Media</h2>
+                  <img src="img/instagram.png" alt="in">
+                  <img src="img/facebook.png" alt="fc">
+                  <img src="img/linkedin.png" alt="li">
+                  <img src="img/google.png" alt="go">
+                </div>
+               
+            </div>
+          </div>
+          <hr>
+          <div class="footer-bottom">
+            <p>© 2021 SMP Negeri 1 Cibadak. All Rights Reserved.</p>
+         </div>
+         
+        </div>
+</body>
+</html>

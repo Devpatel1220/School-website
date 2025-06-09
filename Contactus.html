@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCHOOL</title>
+    
+    <!-- icon link -->
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+
+    <!--burgur menu start  -->
+   <script>
+    function toggleMenu() {
+        document.querySelector(".nav ul").classList.toggle("active");
+    }
+   </script>
+   <!--burgur menu end  -->
+
+    <style>    
+      /*  <!-- navigation --> */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        padding: 5% 10%;
+      }
+
+      .bg-img {
+        position: relative;
+      }
+
+      .bg-img img {
+        width: 100%;
+        height: 500px;
+      }
+      .menu-icon{
+    display: none;
+}
+
+      .bg-img::after {
+        content: "";
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.6;
+      }
+
+      .logo {
+        width: 10%;
+      }
+
+      .logo img {
+        margin-top: 10px;
+        padding-left: 150px;
+      }
+
+      .main-navigation {
+        /* position:fixed; */
+        background-color: black;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .nav {
+        width: 80%;
+      }
+
+      .nav ul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50%;
+        list-style: none;
+      }
+
+      .nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+      }
+
+      .nav ul li:hover {
+        color: white;
+        text-decoration: underline 3px;
+        border-radius: 5px;
+      }
+
+      .main-text {
+        position: absolute;
+        top: 280px;
+        right: 33%;
+        z-index: 1;
+      }
+
+      .text h1 {
+        color: white;
+        text-align: center;
+      }
+
+      .text p {
+        text-align: center;
+        font-size: x-large;
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      /* form css */
+      .container1{
+        padding: 5% 15%;
+      }
+      .form {
+            margin: 10% 0;
+            width: 100%;
+            background-color: lightblue;
+            padding: 40px;
+            border-radius: 30px;
+        }
+      .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block; 
+            margin-bottom: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-row .form-group {
+            width: 48%;
+        }
+
+        .form-group input,.form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #F5F5F5;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 150px
+      
+        }
+
+        .submit-btn {
+            width: 30%;
+            padding: 12px;
+            margin-left: 35%;
+            background-color: #0099FF;
+            color: #FFF;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+          
+        }
+       
+        button:hover {
+           background-color:#8cc7ee;
+           color: #FFF;
+        }
+
+      /* map */
+
+      .map{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+      }
+
+      /* <!-- footer --> */
+      .footer-page {
+    width: 100%;
+    background: hsla(0, 0%, 92%, 1);
+}
+
+.footer-body {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.footer-head2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    gap: 60px;
+    font-family: sans-serif
+}
+
+.list1 li {
+    list-style: none;
+    padding: 10px;
+}
+
+.list2 li {
+    list-style: none;
+    padding: 9px;
+}
+
+.list3 img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom p {
+    padding: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+@media only screen and (max-width: 768px) {
+              
+             
+              .logo img {
+                  width: 80%;
+                  padding-left: 80px;
+              }
+              .nav ul {
+                  padding-left: 36%;
+              }
+              .nav ul li  {
+                  padding: 8px;
+              }
+              .main-text {
+                  top: 300px;
+                  right: 13%;
+                  font-size: 10px;
+              }
+      
+              .footer-page{
+                margin-top: 20px;
+              }
+              .footer-body{
+                width: 100%;
+              }
+              .footer-head1{
+                  width: 25%;
+                  font-size: 15px;
+              }
+              .footer-head2{
+                  width: 20%;
+                  padding-left: 240px;
+              }
+              .footer-head2 .list1{
+              
+                  font-size: 13px;
+              }
+              .footer-head2 .list2{
+              
+                  font-size:13px;
+              }.footer-head2 .list3{
+
+                  font-size: 13px;
+              } 
+
+
+}
+@media only screen and (max-width: 426px) {
+
+.logo img{
+ width: 100%;
+ padding-left: 45px;
+}
+.bg-img img{
+height: 350px;
+}
+.main-text {
+  top: 190px;
+  right: 30px;
+}
+.main-text .text h1{
+  font-size: 20px;
+}
+.main-text .text p{
+  font-size: 15px;
+}
+
+.form-group input{
+  padding: 5px;
+  width: 100%;
+  font-size: 15px;
+}
+.map iframe{
+  width: 80%;
+  height: 300px;
+}
+
+
+
+
+
+
+
+.footer-page {
+        width: 100%;
+
+    }
+
+    .footer-body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-head1 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-left: 100px;
+
+    }
+    .footer-head1 h3 {
+        padding: 0 0 0 0;
+    }
+    .footer-head2 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-left: 100px;
+        padding-top: 20%;
+
+    }
+
+    .footer-head2 .list1 {
+        font-size: 15px
+    }
+
+    .footer-head2 .list2 {
+        font-size: 15px
+    }
+
+    .footer-head2 .list3 {
+        font-size: 15px
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+/* / burgur menu start / */
+
+@media (max-width: 800px) {
+  .menu-icon {
+      display: block;
+      color: white;
+      font-size: 30px;
+      position: relative;
+      right: -75%;
+      cursor: pointer;
+  }
+
+  .nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: #101524db;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav ul.active {
+      display: flex;
+      margin-top: 5%;
+  }
+
+  .nav ul li {
+      padding: 10px 0;
+      text-decoration: none;
+  }
+}
+/* / burgur menu end / */
+
+    </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <div class="main-navigation">
+      <div class="logo">
+        <img src="img/Logo.png" alt="home" class="home" />
+      </div>
+
+    <!--burgur menu start  -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      ☰
+   </div>
+   <!--burgur menu end  -->
+   
+      <div class="nav">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Teachers.html">Teachers</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contactus.html">Contact us</a></li>
+          <li><a href="Blog.html">Blogs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-img">
+      <img src="img/bannar.png" alt="logo" class="logo" />
+    </div>
+
+    <div class="main-text">
+      <div class="text">
+        <h1>Contact Us</h1>
+        <p>Jika Memiliki Pertanyaan Bisa Langsung isi Form Dibawah Ini</p>
+      </div>
+    </div>
+
+    <!-- form -->
+
+  <!-- form section -->
+  
+  <div class="container1">
+    <!-- <h1>form</h1> -->
+    <div class="form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your E-mail">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Contact No:</label>
+            <input type="tel" id="phone" placeholder="+91">
+        </div>
+        <div class="form-group">
+            <label for="message">Address:</label>
+            <textarea id="message" placeholder="Enter"></textarea>
+        </div>
+        <button class="submit-btn">Submit</button>
+    </div>
+</div>
+
+<!-- map -->
+
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.684981253968!2d72.56056217477057!3d23.035336015852874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85de84596675%3A0xbfc1f9a2dce5ee5c!2sSofts%20Solution%20Service%20-%20Best%20IT%20Training%20Course%20and%20Institute%20in%20Ahmedabad!5e0!3m2!1sen!2sin!4v1735800762872!5m2!1sen!2sin"
+   width="80%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+    
+    <!-- footer -->
+
+<footer>
+  <div class="footer-page">
+    <div class="container">
+      <div class="footer-body">
+
+        <div class="footer-head1">
+          <img src="img/Logo.png" alt="logo">
+          <p>Jl. Siliwangi No 123, Cibadak, Cibadak, Sukabumi,
+            Jawa Barat 43351, Indonesia, (0266)531333</p>
+          <h3>info@smpn1cibadak.sch.id <br> smpn1cbd_kabsi@yahoo.co.id</h3>
+        </div>
+
+        <div class="footer-head2">
+          <div class="list1">
+            <ul>
+              <h2>Jelajah</h2>
+              <li>Profil </li>
+              <li>Sekola</li>  
+              <li>Sambutan</li>
+              <li>Berita</li>
+            </ul>
+          </div>
+         
+          <div class="list2">
+            <ul>
+              <h2>Halaman Umum</h2>
+              <li>Kontak </li>
+              <li>Lokasi</li>
+              <li>Panduan PPDB</li>  
+              <li>PPDB SMPN 1 Cibadak</li>
+              <li>Data Guru</li>
+            </ul>
+          </div>
+          <div class="list3">
+            <h2>Social Media</h2>
+            <img src="img/instagram.png" alt="in">
+            <img src="img/facebook.png" alt="fc">
+            <img src="img/linkedin.png" alt="li">
+            <img src="img/google.png" alt="go">
+          </div>
+         
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>© 2021 SMP Negeri 1 Cibadak. All Rights Reserved.</p>
+   </div>
+   
+  </div>
+  </body>
+</html>
